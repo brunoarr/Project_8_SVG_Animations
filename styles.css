@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url('svgs/background.svg');
+  background-repeat: repeat;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+  padding: 0 15px;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  transition: 0.4s ease-out;
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: center;
+  color: #58B8EF;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+ul > li:hover .st0 {
+    /* -webkit-transform: scale(1.2);
+    transform: scale(1.2); */
+    transition: 0.4s ease-out;
+    fill: #111;
+}
+
+ul > li:hover a {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.4s ease-out;
+    color: #111;
+}
+
+/* --------------
+SVG ICONS
+--------------*/
+
+.st0 {
+  transition: 0.4s ease-out;
+  width:100px;
+  fill: #39ADD1;
+}
+
+/* SVG Logo */
+
+.st3 {
+  fill:#BA8058;
+}
+
+.st1 { /* logo text */
+  display: none;
+  fill:#EAAA7F;
+}
+.st2 {
+  fill:#F4C6A6;
+}
+
+.mobile-h1 {
+  color: #EAAA7F;
+}
+
+/* SVG dog */
+
+.sable-dog {
+  color: #BA8058;
+}
+
+.fawn-dog{
+  color: #F4C6A6;
+}
+
+.red-dog{
+  color:#663c20;
+}
+
+.stone-dog {
+  color: #52595F;
+}
+
+.container {
+  width: 200px;
+  height: 150px;
+}
+
+.caption {
+  color: #ba8058;
+}
+
+/* --------------
+MEDIA QUERIES
+--------------*/
+
+@media screen and (min-width: 600px) {
+  .st1 { /* logo text */
+    display: block;
+  }
+  .mobile-h1 {
+    display: none;
+  }
+  header nav {
+    padding-bottom: 50px;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+  .image-block {
+    display: inline-block;
+  }
+}
